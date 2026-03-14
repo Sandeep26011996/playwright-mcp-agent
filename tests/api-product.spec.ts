@@ -4,7 +4,7 @@ import Ajv from 'ajv';
 // Remove import of 'describe' (not needed in Playwright)
 // Use 'test.describe' instead of global 'describe'
 
-test.describe('FakeStoreAPI Product Endpoint', () => {
+test.describe('FakeStoreAPI Product Endpoint @smoke', () => {
 
     test('GET /products/1 - validate response and schema', async ({ request }) => {
         const endpoint = 'https://fakestoreapi.com/products/1';
