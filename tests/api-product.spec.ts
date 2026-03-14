@@ -9,7 +9,7 @@ test.describe('FakeStoreAPI Product Endpoint @smoke', () => {
     test('GET /products/1 - validate response and schema', async ({ request }) => {
         const endpoint = 'https://fakestoreapi.com/products/1';
         const response = await request.get(endpoint);
-        expect(response.status()).toBe(403);
+        expect(response.status()).toBe(200);
 
         const body = await response.json();
         // Check required keys
@@ -44,7 +44,7 @@ test.describe('FakeStoreAPI Product Endpoint @smoke', () => {
     test('GET /products/2 - validate response and schema', async ({ request }) => {
         const endpoint = 'https://fakestoreapi.com/products/2';
         const response = await request.get(endpoint);
-        expect(response.status()).toBe(403);
+        expect(response.status()).toBe(200);
 
         const body = await response.json();
         // Check required keys
