@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('search and add cucumber to cart', async ({ page }) => {
+test('search and add cucumber to cart @regression', async ({ page }) => {
   // 1. Navigate to the website
   await page.goto('https://rahulshettyacademy.com/seleniumPractise/#/');
 
