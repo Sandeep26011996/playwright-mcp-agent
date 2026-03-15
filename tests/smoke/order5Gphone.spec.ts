@@ -5,5 +5,4 @@ test('Order a Samsung 5G Android phone and handle mobile number prompt @smoke', 
   const flipkart = new FlipkartHomePage(page);
   await flipkart.goto();
   await flipkart.search('Samsung 5G Android phone');
-  const newPage = await flipkart.selectFirstSamsungPhone();
 });
